@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+/*GENERAL*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
+
+#Landing-Page {
+    padding: 32px;
+}
+
+.Row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*NAVIGATION BAR*/
+
+.Nav-Container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.T-React-Wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.T-React-Logo-Wrapper {
+    width: 100%;
+    max-width: 40px;
+    height: 100%;
+    max-height: 40px;
+    margin-right: 12px;
+}
+
+.T-React-Logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.T-React-Title {
+    font-size: 24px;
+    color: #243E63;
+}
+
+.Nav-Link {
+    margin: 0 24px;
+    color: #243E63;
+    font-size: 14px;
+}
+
+.Nav-Link-Primary {
+    color: white;
+    font-size: 14px;
+    padding: 12px 32px;
+    border-radius: 24px;
+    background-color: #6415FF;
+}
+
+/*LANDING-PAGE*/
