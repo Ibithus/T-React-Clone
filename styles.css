@@ -14,12 +14,32 @@
 
 #Landing-Page {
     padding: 32px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.Flex {
+    display: flex;
+}
+
+.Flex-1 {
+    flex: 1;
 }
 
 .Row {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.Purple {
+    color: #6415FF;
+}
+
+.Light-Text {
+    color: #A0AEC0;
+    font-size: 12px;
 }
 
 /*NAVIGATION BAR*/
@@ -69,3 +89,84 @@
 }
 
 /*LANDING-PAGE*/
+
+.Landing-Container {
+    display: flex;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.Landing-Info-Container {
+    width: 50%;
+}
+
+.Section-Title {
+    color: #1A202C;
+    font-size: 48px;
+}
+
+.Landing-Para {
+    color: #243E63;
+    margin: 32px 0;
+    font-weight: 300;
+    max-width: 80%;
+}
+
+.Email-Input {
+    position: relative;
+    font-size: 16px;
+    border-radius: 32px;
+    border-color: rgba(0,0,0,0.25);
+    padding: 20px 192px 24px 32px;
+}
+
+.Email-Input::placeholder {
+    opacity: 0.4;
+}
+
+.Input-Button {
+    position: absolute;
+    border: none;
+    padding: 16px 32px;
+    font-size: 16px;
+    color: #F7FAFC;
+    font-weight: 700;
+    border-radius: 24px;
+    margin: 8px 8px 8px 0;
+    background-color: #6415FF;
+    transform: translateX(-105%);
+}
+
+.Company-Text {
+    color: #A0AEC0;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.Company-Wrapper {
+    margin: 80px 0px 0px ;
+}
+
+.Company-Logo-Wrapper {
+    margin: 16px 0px 0px;
+    padding: 0 64px 0px 0px;
+    width: 100%;
+}
+
+.Company-Logo {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    object-fit: contain;
+}
+
+
+.Landing-Image-Container {
+    width: 50%;
+}
+
+.Landing-Image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
