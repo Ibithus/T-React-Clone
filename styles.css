@@ -1,242 +1,295 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Roboto:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Roboto:wght@300;400;500;700&display=swap");
 
 /*GENERICS*/
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    text-decoration: none;
-    font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
 }
 
 .Row {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .Text-Small-Caps {
-    font-size: 12px;
+  font-size: 12px;
+}
+
+.Text-Semi-Large {
+    font-size: 36px;
 }
 
 .Text-Large {
-    font-size: 48px;
+  font-size: 48px;
+}
+
+.Text-Medium {
+    font-size: 20px;
 }
 
 .Purple {
-    color: #6415FF;
+  color: #6415ff;
 }
 
 .Black {
-    color: #1A202C;
+  color: #1a202c;
 }
 
 .Grey {
-    color: #243E63;
+  color: #243e63;
 }
 
 .Light-Grey {
-    color: #A0AEC0;
+  color: #a0aec0;
 }
 
 .Dark-Grey {
-    color: #7C8BA1;
+  color: #7c8ba1;
 }
 
 .Section-Title {
-    font-size: 16px;
-    color: #6415FF;
-    margin-bottom: 16px;
+  font-size: 16px;
+  color: #6415ff;
+  margin-bottom: 16px;
+}
+
+.Purple-Button {
+  color: #fff;
+  border: none;
+  font-size: 14px;
+  padding: 12px 32px;
+  background-color: #6415ff;
+  border-radius: 24px;
 }
 
 /*NAVIGATION BAR*/
 
 .Nav-Container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .Treact {
-    height: 100%;
-    display: flex;
-    align-items: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .Nav-Logo-Wrapper {
-    width: 40px;
-    height: 40px;
-    margin-right: 12px;
+  width: 40px;
+  height: 40px;
+  margin-right: 12px;
 }
 
 .Nav-Logo-Image {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .Nav-Title {
-    font-size: 24px;
-    font-weight: 700;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 .Nav-Link-Wrapper {
-    height: 100%;
-    display: flex;
-    align-items: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .Nav-Link {
-    margin: 0 24px;
-    font-size: 14px;
-}
-
-.Nav-Link-Primary {
-    color: #FFF;
-    padding: 12px 32px;
-    background-color: #6415FF;
-    border-radius: 24px;
+  margin: 0 24px;
+  font-size: 14px;
 }
 
 /*LANDING-PAGE*/
 
 #Landing-Page {
-    padding: 32px;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .Flex {
-    display: flex;
+  display: flex;
 }
 
 .Flex-1 {
-    flex: 1;
+  flex: 1;
 }
 
 .Landing-Container {
-    display: flex;
-    padding: 6rem 0;
+  display: flex;
+  padding: 6rem 0;
 }
 
 .Section-Info-Container {
-    width: 50%;
+  width: 50%;
+  margin-right: 24px;
 }
 
-.Landing-Para {
-    margin: 32px 0;
-    max-width: 80%;
-    font-size: 18px;
-    font-weight: 300;
+.Landing-Para,
+.Quality-Para {
+  margin: 32px 0;
+  max-width: 80%;
+  font-size: 18px;
+  font-weight: 300;
 }
 
 .Landing-Input {
-    font-size: 18px;
-    border-radius: 36px;
-    padding: 20px 192px 20px 32px;
-    border-color: rgb(26, 32, 44, 0.2);
-    position: relative;
+  font-size: 18px;
+  border-radius: 36px;
+  padding: 20px 192px 20px 32px;
+  border-color: rgb(26, 32, 44, 0.2);
+  position: relative;
 }
 
 .Landing-Input::placeholder {
-    color: rgb(26, 32, 44, 0.2);
+  color: rgb(26, 32, 44, 0.2);
 }
 
 .Landing-Button {
-    position: absolute;
-    transform: translateX(-105%);
-    margin: 6px 0;
-    color: #FFF;
-    border: none;
-    font-size: 18px;
-    padding: 16px 28px;
-    border-radius: 32px;
-    background-color: #6415FF;
+  position: absolute;
+  transform: translateX(-105%);
+  margin: 6px 0;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  padding: 16px 28px;
+  border-radius: 32px;
+  background-color: #6415ff;
 }
 
 .Company-List {
-    margin-top: 80px;
+  margin-top: 80px;
 }
 
 .Company-Image-Wrapper {
-    display: flex;
-    margin-top: 16px;
-    padding-right: 120px;
+  display: flex;
+  margin-top: 16px;
+  padding-right: 120px;
 }
 
 .Company-Image {
-    width: 100%;
-    height: 100%;
-    opacity: 0.3;
-    object-fit: contain;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  object-fit: contain;
 }
 
 .Section-Image-Container {
-    width: 50%;
-    display: flex;
+  width: 50%;
+}
+
+.Treact-Landing-Wrapper {
+  display: flex;
 }
 
 .Treact-Landing-Image {
-    width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 /*FEATURES*/
 
-#Features {
-    padding: 96px 0;
+#Features,
+#Quality-Work,
+#Steps {
+  padding: 96px 0;
 }
 
 .Features-Container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .Feature-Info {
-    text-align: center;
+  text-align: center;
 }
 
 .Feature-Para {
-    padding-top: 16px;
-    font-size: 18px;
-    max-width: 600px;
-    margin: 0 auto;
+  padding-top: 16px;
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .Feature-Wrapper {
-    margin-top: 72px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  margin-top: 72px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .Feature {
-    width: 30%;
-    display: flex;
-    padding: 32px 24px;
-    justify-content: space-between;
+  width: 30%;
+  display: flex;
+  padding: 32px 24px;
+  justify-content: space-between;
 }
 
 .Icon-Wrapper {
-    padding: 20px;
-    max-width: 66px;
-    max-height: 66px;
-    border: 1px solid #A0AEC0;
-    border-radius: 100%;
+  padding: 20px;
+  max-width: 66px;
+  max-height: 66px;
+  border: 1px solid #a0aec0;
+  border-radius: 100%;
 }
 
 .Icon-Info {
-    padding-left: 24px;
+  padding-left: 24px;
 }
 
 .Icon-Title {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .Icon-Para {
-    line-height: 1.5;
+  line-height: 1.5;
+}
+
+/*QUALITY WORK*/
+
+.Quality-Work-Container {
+  display: flex;
+}
+
+.Quality-Para {
+  max-width: none;
+}
+
+/*STEPS*/
+
+#Steps {
+  .Section-Info-Container {
+    margin-left: 48px;
+    margin-right: 0px;
+  }
+}
+
+.Step {
+    display: flex;
+    margin-top: 24px;
+    height: calc(100%/3);
+}
+
+.Step-Info {
+    margin-left: 24px;
+}
+
+.Step-Para {
+    margin-top: 20px;
+    max-width: 70%;
 }
