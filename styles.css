@@ -22,7 +22,7 @@
 }
 
 .Text-Semi-Large {
-    font-size: 36px;
+  font-size: 36px;
 }
 
 .Text-Large {
@@ -30,7 +30,7 @@
 }
 
 .Text-Medium {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .Purple {
@@ -204,8 +204,9 @@
 
 #Features,
 #Quality-Work,
-#Steps {
-  padding: 96px 0;
+#Steps,
+#Pricing {
+  padding: 96px 32px;
 }
 
 .Features-Container {
@@ -280,16 +281,58 @@
 }
 
 .Step {
-    display: flex;
-    margin-top: 24px;
-    height: calc(100%/3);
+  display: flex;
+  margin-top: 24px;
+  height: calc(100% / 3);
 }
 
 .Step-Info {
-    margin-left: 24px;
+  margin-left: 24px;
 }
 
 .Step-Para {
-    margin-top: 20px;
-    max-width: 70%;
+  margin-top: 20px;
+  max-width: 70%;
+}
+
+/*PRICING*/
+
+.Plan-Wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 48px;
+}
+
+.Plan {
+  width: 30%;
+  border-radius: 12px;
+  position: relative;
+  border: 2px solid rgb(124, 139, 161, 0.3);
+}
+
+.Plan-Section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 32px;
+  border-bottom: 1px solid rgb(124, 139, 161, 0.3);
+}
+
+.Plan-Section:nth-child(3) {
+  border-bottom: none;
+}
+
+.Plan-Para {
+  margin-top: 24px;
+}
+
+.Plan-Button {
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  padding: 20px 64px;
+  background-color: #6415ff;
+  border-radius: 32px;
 }
