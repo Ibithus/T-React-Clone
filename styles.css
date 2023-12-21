@@ -307,8 +307,7 @@
 .Plan {
   width: 30%;
   border-radius: 12px;
-  position: relative;
-  border: 2px solid rgb(124, 139, 161, 0.3);
+  border: 1px solid rgb(124, 139, 161, 0.3);
 }
 
 .Plan-Section {
