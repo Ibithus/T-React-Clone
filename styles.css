@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+/*GENERICS*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
+
+.Row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.Purple {
+    color: #6415FF;
+}
+
+.Text-Small-Caps {
+    font-size: 12px;
+}
+
+.Light-Grey {
+    color: #A0AEC0;
+}
+
+/*NAVIGATION BAR*/
+
+.Nav-Container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Treact {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.Nav-Logo-Wrapper {
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+}
+
+.Nav-Logo-Image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.Nav-Title {
+    font-size: 24px;
+    color: #243E63;
+    font-weight: 700;
+}
+
+.Nav-Link-Wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.Nav-Link {
+    margin: 0 24px;
+    color: #243E63;
+    font-size: 14px;
+}
+
+.Nav-Link-Primary {
+    color: #FFF;
+    padding: 12px 32px;
+    background-color: #6415FF;
+    border-radius: 24px;
+}
+
+/*LANDING-PAGE*/
+
+#Landing-Page {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.Flex {
+    display: flex;
+}
+
+.Flex-1 {
+    flex: 1;
+}
+
+.Landing-Container {
+    display: flex;
+    padding: 6rem 0;
+}
+
+.Section-Info-Container {
+    width: 50%;
+}
+
+.Landing-Title {
+    font-size: 48px;
+    color: #1A202C;
+}
+
+.Landing-Para {
+    margin: 32px 0;
+    max-width: 80%;
+    font-size: 18px;
+    color: #243E63;
+    font-weight: 300;
+}
+
+.Landing-Input {
+    font-size: 18px;
+    border-radius: 36px;
+    padding: 20px 192px 20px 32px;
+    border-color: rgb(26, 32, 44, 0.2);
+    position: relative;
+}
+
+.Landing-Input::placeholder {
+    color: rgb(26, 32, 44, 0.2);
+}
+
+.Landing-Button {
+    position: absolute;
+    transform: translateX(-105%);
+    margin: 6px 0;
+    color: #FFF;
+    border: none;
+    font-size: 18px;
+    padding: 16px 28px;
+    border-radius: 32px;
+    background-color: #6415FF;
+}
+
+.Company-List {
+    margin-top: 80px;
+}
+
+.Company-Image-Wrapper {
+    display: flex;
+    margin-top: 16px;
+    padding-right: 120px;
+}
+
+.Company-Image {
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    object-fit: contain;
+}
+
+.Section-Image-Container {
+    width: 50%;
+    display: flex;
+}
+
+.Treact-Landing-Image {
+    width: 100%;
+}
