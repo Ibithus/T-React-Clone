@@ -317,7 +317,7 @@
   align-items: center;
   text-align: center;
   padding: 32px;
-  border-bottom: 1px solid rgb(124, 139, 161, 0.3);
+  border-bottom: 2px solid rgb(124, 139, 161, 0.3);
 }
 
 .Plan-Section:nth-child(3) {
@@ -333,6 +333,36 @@
   border: none;
   font-size: 16px;
   padding: 20px 64px;
-  background-color: #6415ff;
+  background: linear-gradient(rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
   border-radius: 32px;
+}
+
+.Plan:nth-child(2) {
+
+    color: white;
+    border: none;
+    background-image: linear-gradient(rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+
+    .Plan-Button {
+        color: #6415ff;
+        background: white;
+    }
+
+    .Plan-Para {
+        color: white;
+    }
+
+    .Plan-Section {
+        border-bottom: 2px solid rgb(124, 139, 161, 0.7);
+    }
+
+    .Plan-Section:nth-child(3) {
+        border-bottom: none;
+    }
+}
+
+.Plan:nth-child(3) {
+    .Plan-Button {
+        background: linear-gradient(rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+    }
 }
