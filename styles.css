@@ -17,6 +17,12 @@
   margin: 0 auto;
 }
 
+.Star {
+    font-size: 20px;
+    color: #FFCD3C;
+    margin-bottom: 24px;
+}
+
 .Text-Small-Caps {
   font-size: 12px;
 }
@@ -205,7 +211,7 @@
 #Features,
 #Quality-Work,
 #Steps,
-#Pricing {
+#Pricing, #Testimonials, #Contact {
   padding: 96px 32px;
 }
 
@@ -273,7 +279,7 @@
 
 /*STEPS*/
 
-#Steps {
+#Steps,#Testimonials {
   .Section-Info-Container {
     margin-left: 48px;
     margin-right: 0px;
@@ -307,6 +313,8 @@
 .Plan {
   width: 30%;
   border-radius: 12px;
+  position: relative;
+  overflow: hidden;
   border: 1px solid rgb(124, 139, 161, 0.3);
 }
 
@@ -336,6 +344,16 @@
   border-radius: 32px;
 }
 
+.Plan-Section:nth-child(1)::before {
+    content: "";
+    width: 100%;
+    top: 0; left: 0;
+    height: 8px;
+    position: absolute;
+    background: linear-gradient(rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+
 .Plan:nth-child(2) {
 
     color: white;
@@ -358,10 +376,112 @@
     .Plan-Section:nth-child(3) {
         border-bottom: none;
     }
+
+    .Plan-Section:nth-child(1)::before {
+        display: none;
+    }    
 }
 
 .Plan:nth-child(3) {
     .Plan-Button {
         background: linear-gradient(rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
     }
+
+    .Plan-Section:nth-child(1)::before {
+        content: "";
+        width: 100%;
+        top: 0; left: 0;
+        height: 8px;
+        position: absolute;
+        background: linear-gradient(rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+    }  
+}
+
+/*TESTIMONIALS*/
+
+.Testimonials-Container {
+    display: flex;
+}
+
+.Testimonials-Para {
+    margin: 32px 0;
+}
+
+.Profile {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+    align-items: center;
+}
+
+.Profile-Wrapper {
+    display: flex;
+}
+
+.Profile-Info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.Profile-Image-Wrapper {
+    max-width: 80px;
+    max-height: 80px;
+    margin-right: 24px;
+}
+
+.Profile-Image {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    object-fit: contain;
+}
+
+.Arrow-Wrapper {
+    display: flex;
+}
+
+.Arrow {
+    width: 48px;
+    height: 48px;
+    color: #6415ff;
+    background-color: #EDF2F7;
+    border: 1px solid #EDF2F7;
+    border-radius: 100%;
+    margin: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*CONTACT*/
+
+.Contact-Container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #6415ff;
+    padding: 96px 64px;
+    border-radius: 12px;
+}
+
+.Contact-Title {
+    width: 50%;
+    color: #FFF;
+}
+
+.Contact-Button {
+    padding: 20px 40px;
+    border-radius: 32px;
+    font-size: 18px;
+    color: #FFF;
+    border: 1px solid #7c8ba1;
+    background-color: transparent;
+}
+
+.Contact-Button:nth-child(1) {
+    margin-right: 24px;
+    background-color: #F56565;
 }
