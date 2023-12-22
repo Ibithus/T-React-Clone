@@ -23,6 +23,10 @@
     margin-bottom: 24px;
 }
 
+.Text-Small {
+    font-size: 14px;
+}
+
 .Text-Small-Caps {
   font-size: 12px;
 }
@@ -438,11 +442,11 @@
     object-fit: contain;
 }
 
-.Arrow-Wrapper {
+.Arrow-Wrapper, .Footer-Icon-Wrapper {
     display: flex;
 }
 
-.Arrow {
+.Arrow, .Footer-Icon {
     width: 48px;
     height: 48px;
     color: #6415ff;
@@ -454,7 +458,6 @@
     align-items: center;
     justify-content: center;
 }
-
 
 /*CONTACT*/
 
@@ -484,4 +487,52 @@
 .Contact-Button:nth-child(1) {
     margin-right: 24px;
     background-color: #F56565;
+}
+
+/*FOOTER*/
+
+footer {
+    margin-top: 96px;
+    padding: 96px 32px;
+    color: #FFF;
+    background-color: #6415ff;
+}
+
+.Footer-Info {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Footer-Link-Wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Footer-Sub-Title {
+    font-size: 16px;
+    margin: 24px 0;
+}
+
+.Footer-Link {
+    font-size: 14px;
+    margin: 12px 0;
+}
+
+.Grey-Line {
+    width: 100%;
+    height: 2px;
+    margin: 48px 0;
+    background-color: rgb(160, 174, 192, 0.2);
+}
+
+.Footer-Bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Footer-Icon {
+    color: #242424;
 }
