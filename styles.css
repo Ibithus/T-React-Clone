@@ -155,16 +155,16 @@
   font-weight: 300;
 }
 
+.Landing-Input::placeholder {
+    color: rgb(26, 32, 44, 0.2);
+  }
+
 .Landing-Input {
   font-size: 18px;
   border-radius: 36px;
   padding: 20px 192px 20px 32px;
   border-color: rgb(26, 32, 44, 0.2);
   position: relative;
-}
-
-.Landing-Input::placeholder {
-  color: rgb(26, 32, 44, 0.2);
 }
 
 .Landing-Button {
@@ -247,7 +247,7 @@
 .Feature {
   width: 30%;
   display: flex;
-  padding: 32px 24px;
+  padding: 24px;
   justify-content: space-between;
 }
 
@@ -535,4 +535,15 @@ footer {
 
 .Footer-Icon {
     color: #242424;
+}
+
+/*MOBILE RESPONSIVENESS*/
+
+@media(max-width: 960px) {
+
+    .Landing-Button {
+        content: "";
+        position: absolute;
+        top: 0%; right: 40%;
+    }
 }
