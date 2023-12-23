@@ -121,19 +121,66 @@
   font-size: 14px;
 }
 
-/*Hamburger Menu*/
+/*Creating Hamburger Menu*/
 
 .Hamburger-Menu {
-    content: "";
-    right: 0;
+    border: none;
+    font-size: 24px;
+    color: #7342d6;
     display: none;
-    position: absolute;
 }
 
-.Hamburger {
-    font-size: 24px;
-    color: #6415ff;
+.Backdrop-Menu {
+    position: absolute;
+    z-index: 100;
+    top: 0; left: 0;
+    bottom: 0; right: 0;
+    background-color: #242424;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 300ms ease;
 }
+
+.Menu-Open .Backdrop-Menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.Menu-Open {
+    max-height: 100vh;
+    overflow-y: hidden;
+}
+
+.Menu-Link-Wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Menu-Links {
+    margin: 24px 0;
+    font-size: 24px;
+    color: white;
+    transition: all 300ms ease;
+}
+
+.Menu-Links:hover {
+    text-decoration: underline;
+}
+
+.Menu-Close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    font-size: 24px;
+    border: none;
+    color: white;
+    background-color: transparent;
+}
+
 
 /*LANDING-PAGE*/
 
@@ -495,6 +542,11 @@
     color: #FFF;
 }
 
+.Contact-Button-Wrapper {
+    display: flex;
+    align-items: center;
+}
+
 .Contact-Button {
     padding: 20px 40px;
     border-radius: 32px;
@@ -561,6 +613,8 @@ footer {
 
 @media(max-width: 960px) {
 
+    /*LANDING PAGE*/
+
     .Sign-In-Button {
         position: relative;
     }
@@ -572,13 +626,35 @@ footer {
         transform: translateX(-8px);
     }
 
-    .Hamburger-Menu {
-        content: "";
-        position: absolute;
-        display: contents;
-    }
-
     .Nav-Link {
         display: none;
+    }
+
+    .Hamburger-Menu {
+        display: block;
+    }
+
+    /*QUALITY*/
+
+    .Icon-Title {
+        font-size: 18px;
+    }
+
+    .Section-Sub-Title {
+        font-size: 36px;
+    }
+
+    /*CONTACT*/
+
+    .Contact-Button-Wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Contact-Button:nth-child(1) {
+        margin-right: 0px;
+        margin-bottom: 24px;
     }
 }

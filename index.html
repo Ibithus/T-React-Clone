@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>T React</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="index.js">
     <script
       src="https://kit.fontawesome.com/c8e4d183c2.js"
       crossorigin="anonymous"
@@ -32,8 +33,20 @@
             <a class="Nav-Link Grey" href="">Login</a>
             <a class="Nav-Link Grey Purple-Button" href="">Sign Up</a>
           </div>
-          <div class="Hamburger-Menu">
-            <i class="Hamburger fas fa-bars"></i>
+          <button class="Hamburger-Menu" onclick="openMenu()">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="Backdrop-Menu">
+            <button class="Menu-Close" onclick="closeMenu()">
+              <i class="fas fa-times"></i>
+            </button>
+            <div class="Menu-Link-Wrapper">
+              <a class="Menu-Links" onclick="closeMenu()" href="#">Home</a>
+              <a class="Menu-Links" onclick="closeMenu()" href="#Features"
+                >Books</a
+              >
+              <a class="Menu-Links" onclick="closeMenu()" href="#">Contact</a>
+            </div>
           </div>
         </div>
       </nav>
@@ -41,7 +54,7 @@
         <div class="Row Landing-Container">
           <div class="Section-Info-Container">
             <div class="Landing-Info">
-              <h1 class="Black Text-Large">
+              <h1 class="Black Text-Large Section-Sub-Title">
                 Beautiful React Templates <span class="Purple">For You</span>
               </h1>
               <p class="Landing-Para Grey">
@@ -85,7 +98,7 @@
       <div class="Row Features-Container">
         <div class="Feature-Info">
           <h1 class="Section-Title">FEATURES</h1>
-          <h1 class="Text-Large Grey">
+          <h1 class="Text-Large Grey Section-Sub-Title">
             We Have Amazing <span class="Purple">Service</span>
           </h1>
           <p class="Feature-Para Dark-Grey">
@@ -185,7 +198,7 @@
       <div class="Row Quality-Work-Container">
         <div class="Section-Info-Container">
           <h1 class="Section-Title">QUALITY</h1>
-          <h1 class="Grey Text-Large">
+          <h1 class="Grey Text-Large Section-Sub-Title">
             Designed And Developed By <span class="Purple">Professionals</span>
           </h1>
           <p class="Light-Grey Quality-Para">
@@ -220,7 +233,7 @@
         </div>
         <div class="Section-Info-Container">
           <h1 class="Section-Title">STEPS</h1>
-          <h1 class="Grey Text-Large">
+          <h1 class="Grey Text-Large Section-Sub-Title">
             Easy To <span class="Purple">Get Started</span>
           </h1>
           <div class="Step-Wrapper">
@@ -261,7 +274,7 @@
       <div class="Row">
         <div class="Feature-Info">
           <h1 class="Section-Title">PRICING</h1>
-          <h1 class="Text-Large Grey">
+          <h1 class="Text-Large Grey Section-Sub-Title">
             Reasonable And Flexible <span class="Purple">Plans</span>
           </h1>
           <p class="Feature-Para Dark-Grey">
@@ -337,7 +350,7 @@
         </div>
         <div class="Section-Info-Container">
           <h1 class="Section-Title Purple">TESTIMONIALS</h1>
-          <h1 class="Text-Large Grey">
+          <h1 class="Text-Large Grey Section-Sub-Title">
             Our Clients <span class="Purple">Love Us</span>
           </h1>
           <p class="Text-Medium Light-Grey Testimonials-Para">
@@ -385,7 +398,7 @@
             Developers all over the world are happily using Treact.
           </h1>
         </div>
-        <div>
+        <div class="Contact-Button-Wrapper">
           <button class="Contact-Button">Get Started</button>
           <button class="Contact-Button">Contact Us</button>
         </div>
