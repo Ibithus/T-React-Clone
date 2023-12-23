@@ -113,11 +113,41 @@
   height: 100%;
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .Nav-Link {
   margin: 0 24px;
   font-size: 14px;
+}
+
+/*Hamburger Menu*/
+
+.Hamburger-Menu {
+    content: "";
+    right: 0;
+    display: none;
+    position: absolute;
+}
+
+.Hamburger-Info {
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 2;
+    z-index: 5;
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    right: 0; bottom: 0;
+    background-color: white;
+}
+
+.Hamburger {
+    font-size: 24px;
+    color: #6415ff;
 }
 
 /*LANDING-PAGE*/
@@ -153,6 +183,11 @@
   max-width: 80%;
   font-size: 18px;
   font-weight: 300;
+}
+
+.Landing-Info {
+    display: flex;
+    flex-direction: column;
 }
 
 .Landing-Input::placeholder {
@@ -541,9 +576,24 @@ footer {
 
 @media(max-width: 960px) {
 
+    .Sign-In-Button {
+        position: relative;
+    }
+
     .Landing-Button {
         content: "";
         position: absolute;
-        top: 0%; right: 40%;
+        top: 0%; right: 0;
+        transform: translateX(-8px);
+    }
+
+    .Hamburger-Menu {
+        content: "";
+        position: absolute;
+        display: contents;
+    }
+
+    .Nav-Link {
+        display: none;
     }
 }
