@@ -151,6 +151,10 @@
     justify-content: center;
 }
 
+.Backdrop-Menu, .Menu-Open {
+    visibility: visible;
+}
+
 .Hamburger-Menu-Close {
     border: none;
     content: "";
