@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>T React</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="index.js" />
+    <script src="index.js"></script>
     <script
       src="https://kit.fontawesome.com/c8e4d183c2.js"
       crossorigin="anonymous"
@@ -32,6 +32,21 @@
             <a class="Nav-Link Grey" href="">Contact Us</a>
             <a class="Nav-Link Grey" href="">Login</a>
             <a class="Nav-Link Grey Purple-Button" href="">Sign Up</a>
+          </div>
+          <button class="Hamburger-Icon-Open" onclick="openMenu()">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="Backdrop-Menu">
+            <button class="Hamburger-Icon-Close" onclick="closeMenu()">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="Menu-Link-Wrapper">
+                <a class="Purple Text-Medium" href="#Features">FEATURES</a>
+                <a class="Purple Text-Medium" href="#Quality-Work">QUALITY</a>
+                <a class="Purple Text-Medium" href="#Steps">STEPS</a>
+                <a class="Purple Text-Medium" href="#Pricing">PRICING</a>
+                <a class="Purple Text-Medium" href="#Testimonials">TESTIMONIALS</a>
+            </div>
           </div>
         </div>
       </nav>
