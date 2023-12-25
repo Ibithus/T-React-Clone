@@ -520,10 +520,10 @@
 
 .Arrow,
 .Footer-Icon {
+  width: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 48px;
   height: 48px;
   color: #6415ff;
   background-color: #edf2f7;
