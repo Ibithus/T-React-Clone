@@ -132,6 +132,7 @@
   right: 24px;
   font-size: 24px;
   transform: translateX(-100%);
+  visibility: hidden;
 }
 
 .Backdrop-Menu {
@@ -335,6 +336,11 @@
 
 .Quality-Work-Container {
   display: flex;
+}
+
+#Quality-Work .Section-Info-Container {
+    width: 50%;
+    padding-right: 24px;
 }
 
 .Quality-Para {
@@ -611,7 +617,14 @@ footer {
 /*MOBILE RESPONSIVENESS*/
 
 @media (max-width: 960px) {
+
   /*LANDING PAGE*/
+
+  .Landing-Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   .Sign-In-Button {
     position: relative;
@@ -621,12 +634,45 @@ footer {
     content: "";
     position: absolute;
     top: 0%;
-    right: 0;
+    right: 132px;
     transform: translateX(-8px);
+  }
+
+  .Landing-Info {
+    text-align: center;
+  }
+
+  .Company-List {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 72px;
+  }
+
+  .Company-Image-Wrapper {
+    padding-right: 0;
+    max-width: 400px;
+  }
+
+  .Landing-Para {
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 24px 0 ;
+  }
+
+  .Section-Info-Container:nth-child(1) {
+    margin-right: 0;
+    width: 100%;
+    max-width: 700px;
+    margin-bottom: 48px;
   }
 
   .Nav-Link {
     display: none;
+  }
+
+  .Hamburger-Icon-Open {
+    visibility: visible;
   }
 
   /*QUALITY*/
@@ -637,6 +683,19 @@ footer {
 
   .Section-Sub-Title {
     font-size: 36px;
+  }
+
+  #Quality-Work .Quality-Work-Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #Quality-Work .Section-Info-Container  {
+    padding-right: 0;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
   }
 
   /*CONTACT*/
@@ -653,3 +712,45 @@ footer {
     margin-bottom: 24px;
   }
 }
+
+@media (max-width:937px) {
+    .Plan-Button {
+        padding: 20px 48px;
+    }
+
+    .Feature {
+        width: 50%;
+    }
+
+    .Feature-Para {
+        font-weight: 300;
+    }
+
+}
+
+@media (max-width: 800px) {
+    
+    .Quality-Para {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 24px 0;
+    }
+
+    #Steps .Section-Sub-Title {
+        font-size: 32px;
+    }
+
+    .Quality-Work-Container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #Steps .Section-Info-Container {
+        margin-top: 72px;
+    }
+
+}
+
+
+
