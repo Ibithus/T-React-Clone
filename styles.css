@@ -239,7 +239,7 @@
 }
 
 .Company-List {
-  margin-top: 80px;
+  padding-top: 80px;
 }
 
 .Company-Image-Wrapper {
@@ -292,6 +292,7 @@
 
 .Feature-Para {
   padding-top: 16px;
+  font-weight: 300;
   font-size: 18px;
   max-width: 600px;
   margin: 0 auto;
@@ -339,8 +340,8 @@
 }
 
 #Quality-Work .Section-Info-Container {
-    width: 50%;
-    padding-right: 24px;
+  width: 50%;
+  padding-right: 24px;
 }
 
 .Quality-Para {
@@ -612,4 +613,411 @@ footer {
 
 .Footer-Icon {
   color: #242424;
+}
+
+/*RESPONSIVENESS*/
+
+@media (max-width: 950px) {
+  /*LANDING-PAGEE*/
+
+  #Landing-Page {
+    .Nav-Link {
+      display: none;
+    }
+
+    .Hamburger-Icon-Open {
+      visibility: visible;
+    }
+
+    .Landing-Container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .Section-Image-Container,
+    .Section-Info-Container {
+      width: 100%;
+      max-width: 512px;
+    }
+
+    .Section-Sub-Title {
+      font-size: 30px;
+    }
+
+    .Landing-Info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .Company-List {
+      padding: 48px 0 24px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .Company-Image-Wrapper {
+      padding: 0;
+    }
+  }
+
+  /*FEATURES*/
+
+  #Features {
+    .Feature {
+      width: 50%;
+    }
+    .Section-Sub-Title {
+      font-size: 36px;
+    }
+  }
+
+  /*Quality*/
+
+  #Quality-Work {
+    .Section-Info-Container {
+      margin: 0;
+    }
+
+    .Section-Sub-Title {
+      font-size: 32px;
+    }
+
+    .Quality-Para {
+      font-size: 16px;
+    }
+  }
+
+  /*STEPS*/
+
+  #Steps {
+    .Section-Sub-Title {
+      font-size: 32px;
+    }
+
+    .Text-Semi-Large {
+      font-size: 32px;
+    }
+  }
+
+  /*PRICING*/
+
+  #Pricing {
+    .Section-Sub-Title {
+      font-size: 32px;
+    }
+
+    .Feature-Para {
+      font-size: 16px;
+    }
+
+    .Plan {
+      .Text-Large {
+        font-size: 24px;
+      }
+      .Text-Medium {
+        font-size: 18px;
+      }
+
+      .Plan-Button {
+        font-size: 16px;
+        padding: 18px 36px;
+      }
+    }
+  }
+
+  /*TESTIMONIALS*/
+
+  #Testimonials {
+    .Section-Sub-Title {
+      font-size: 32px;
+    }
+
+    .Testimonials-Para {
+      font-size: 16px;
+      font-weight: 300;
+    }
+
+    .Profile-Wrapper {
+      .Text-Medium {
+        font-size: 16px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+
+  /*CONTACT*/
+
+  #Contact {
+    .Contact-Button-Wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .Contact-Button {
+      margin: 12px 0;
+    }
+    .Text-Semi-Large {
+      font-size: 30px;
+    }
+  }
+
+  /*FOOTER*/
+
+  .Footer-Bar {
+    .Text-Medium {
+      font-size: 18px;
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  /*LANDING-PAGE*/
+
+  #Landing-Page {
+    .Sign-In-Button {
+      position: relative;
+    }
+
+    .Landing-Input {
+      margin-bottom: 16px;
+    }
+
+    .Landing-Button {
+      z-index: ;
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      transform: translateY(100%);
+    }
+
+    .Company-List {
+      margin-top: 24px;
+    }
+  }
+
+  /*FEATURES*/
+
+  #Features {
+    .Section-Sub-Title {
+      font-size: 32px;
+    }
+
+    .Feature-Para {
+      font-size: 16px;
+    }
+
+    .Icon-Info {
+      font-size: 14px;
+    }
+
+    .Icon-Title {
+      font-size: 16px;
+    }
+  }
+
+  /*QUALITY And STEPS*/
+
+  #Quality-Work,
+  #Steps {
+    .Quality-Work-Container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .Section-Image-Container,
+    .Section-Info-Container {
+      width: 100%;
+      max-width: 512px;
+    }
+
+    .Section-Info-Container {
+      padding: 0 0 96px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .Section-Sub-Title {
+      max-width: 500px;
+      text-align: center;
+    }
+
+    .Quality-Para {
+      text-align: center;
+    }
+
+  }
+
+  #Steps {
+    .Section-Info-Container {
+      margin: 0;
+      padding: 96px 0 0 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .Step {
+      display: flex;
+      justify-content: center;
+      margin-top: 48px;
+    }
+
+    .Step-Info {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-left: 0;
+    }
+
+  }
+
+  /*PRICING*/
+
+  #Pricing {
+    .Plan-Wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .Plan {
+      width: 100%;
+      max-width: 300px;
+      margin-bottom: 96px;
+    }
+
+    .Feature-Para {
+      max-width: 512px;
+      margin: 0 auto;
+    }
+  }
+
+  /*TESTIMONIALS*/
+
+  #Testimonials {
+    .Testimonials-Container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .Section-Image-Container,
+    .Section-Info-Container {
+      width: 100%;
+      max-width: 512px;
+    }
+
+    .Section-Info-Container {
+      margin: 48px 0 0 0;
+    }
+  }
+
+  /*CONTACT*/
+
+  #Contact {
+    .Text-Semi-Large {
+      font-size: 24px;
+    }
+
+    .Contact-Button {
+      font-size: 16px;
+      padding: 16px 36px;
+    }
+  }
+
+  /*FOOTER*/
+
+  .Footer-Link-Wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+
+  .Footer-Info {
+    width: 30%;
+    padding: 24px;
+    text-align: center;
+  }
+
+  .Footer-Bar {
+    display: flex;
+    justify-content: center;
+
+    .Footer-Icon, .Text-Medium {
+      display: none;
+    }
+  }
+}
+
+@media(max-width:550px) {
+  /*LANDING-PAGE*/
+
+  #Landing-Page {
+    .Section-Sub-Title {
+      font-size: 24px;
+    }
+    .Landing-Para {
+      font-size: 16px;
+    }
+    .Landing-Input {
+      padding-top: 16px ;
+      padding-bottom: 16px;
+    }
+    .Company-List {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+  }
+
+  /*FEATURES*/
+
+  #Features {
+    .Feature {
+      width: 100%;
+    }
+    .Feature-Para {
+      font-size: 18px;
+    }
+    .Icon-Para {
+      font-size: 18px;
+    }
+    .Icon-Title {
+      font-size: 20px;
+    }
+  }
+
+  /*CONTACT*/
+
+  #Contact {
+    .Contact-Container {
+      display: flex;
+      flex-direction: column;
+    }
+    .Contact-Title {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    .Text-Semi-Large {
+      font-size: 20px;
+    }
+  }
+
+  /*FOOTER*/
+
+  .Footer-Info {
+    width: 50%;
+  }
 }
