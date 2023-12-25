@@ -214,29 +214,28 @@
   flex-direction: column;
 }
 
-.Landing-Input::placeholder {
-  color: rgb(26, 32, 44, 0.2);
+/*Adding Landing-Input*/
+
+.Sign-In-Wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 
-.Landing-Input {
-  font-size: 18px;
+.Email-Input {
+  width: 80%;
   border-radius: 36px;
-  padding: 20px 192px 20px 32px;
-  border-color: rgb(26, 32, 44, 0.2);
-  position: relative;
+  border-color: rgb(124, 139, 161,0.3);
+  padding: 24px 0 24px 32px;
 }
 
-.Landing-Button {
-  position: absolute;
-  transform: translateX(-105%);
-  margin: 6px 0;
-  color: #fff;
-  border: none;
-  font-size: 18px;
-  padding: 16px 28px;
-  border-radius: 32px;
-  background-color: #6415ff;
+.Email-Input::placeholder {
+  font-size: 16px;
+  color: rgb(124, 139, 161,0.3);
 }
+
+/*Adding Landing-Input*/
 
 .Company-List {
   padding-top: 80px;
@@ -621,6 +620,13 @@ footer {
   /*LANDING-PAGEE*/
 
   #Landing-Page {
+
+    .Sign-In-Wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     .Nav-Link {
       display: none;
     }
@@ -775,27 +781,13 @@ footer {
   }
 }
 
-
 @media (max-width: 768px) {
   /*LANDING-PAGE*/
 
   #Landing-Page {
-    .Sign-In-Button {
-      position: relative;
-    }
 
-    .Landing-Input {
-      margin-bottom: 16px;
-    }
-
-    .Landing-Button {
-      z-index: ;
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      transform: translateY(100%);
+    .Section-Info-Container {
+      margin-right: 0;
     }
 
     .Company-List {
@@ -854,7 +846,6 @@ footer {
     .Quality-Para {
       text-align: center;
     }
-
   }
 
   #Steps {
@@ -880,7 +871,6 @@ footer {
       text-align: center;
       margin-left: 0;
     }
-
   }
 
   /*PRICING*/
@@ -894,7 +884,7 @@ footer {
 
     .Plan {
       width: 100%;
-      max-width: 300px;
+      max-width: 400px;
       margin-bottom: 96px;
     }
 
@@ -955,29 +945,32 @@ footer {
     display: flex;
     justify-content: center;
 
-    .Footer-Icon, .Text-Medium {
+    .Footer-Icon,
+    .Text-Medium {
       display: none;
     }
   }
 }
 
-@media(max-width:550px) {
+@media (max-width: 550px) {
   /*LANDING-PAGE*/
 
   #Landing-Page {
     .Section-Sub-Title {
-      font-size: 24px;
+      font-size: 30px;
+      text-align: center;
+      max-width: 300px;
     }
     .Landing-Para {
       font-size: 16px;
     }
-    .Landing-Input {
-      padding-top: 16px ;
-      padding-bottom: 16px;
-    }
     .Company-List {
       padding-left: 24px;
       padding-right: 24px;
+    }
+
+    .Section-Info-Container {
+      margin-right: 0;
     }
   }
 
@@ -991,10 +984,10 @@ footer {
       font-size: 18px;
     }
     .Icon-Para {
-      font-size: 18px;
+      font-size: 16px;
     }
     .Icon-Title {
-      font-size: 20px;
+      font-size: 18px;
     }
   }
 
@@ -1019,5 +1012,11 @@ footer {
 
   .Footer-Info {
     width: 50%;
+  }
+}
+
+@media(max-width:475px) {
+  .Email-Input {
+    width: 100%;
   }
 }
