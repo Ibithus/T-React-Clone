@@ -217,36 +217,35 @@
 /*Adding Landing-Input*/
 
 .Sign-In-Wrapper {
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-direction: column;
-  align-items: start;
   position: relative;
+}
+
+.Email-Input {
+  width: 100%;
+  border-radius: 36px;
+  border-color: rgb(124, 139, 161, 0.3);
+  padding: 24px 0 24px 32px;
+  background-color: transparent;
+}
+
+.Email-Input::placeholder {
+  font-size: 16px;
+  color: rgb(124, 139, 161, 0.3);
 }
 
 .Landing-Button {
   border: none;
-  color: #FFF;
+  color: #fff;
   font-size: 16px;
   padding: 16px 32px;
   border-radius: 36px;
   background-color: #6415ff;
   content: "";
   position: absolute;
-  right: -24px; top: 8px;
-  transform: translateX(-100%);
-}
-
-.Email-Input {
-  width: 80%;
-  border-radius: 36px;
-  border-color: rgb(124, 139, 161,0.3);
-  padding: 24px 0 24px 32px;
-}
-
-.Email-Input::placeholder {
-  font-size: 16px;
-  color: rgb(124, 139, 161,0.3);
+  right: 8px; top: 8px;
 }
 
 /*Adding Landing-Input*/
@@ -630,11 +629,10 @@ footer {
 
 /*RESPONSIVENESS*/
 
-@media (max-width: 950px) {
+@media (max-width: 980px) {
   /*LANDING-PAGEE*/
 
   #Landing-Page {
-
     .Sign-In-Wrapper {
       display: flex;
       flex-direction: column;
@@ -799,13 +797,8 @@ footer {
   /*LANDING-PAGE*/
 
   #Landing-Page {
-
     .Section-Info-Container {
       margin-right: 0;
-    }
-
-    .Company-List {
-      margin-top: 24px;
     }
   }
 
@@ -970,6 +963,20 @@ footer {
   /*LANDING-PAGE*/
 
   #Landing-Page {
+    .Sign-In-Wrapper {
+      width: 100%;
+    }
+
+    .Landing-Button {
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 16px 0;
+      transform: translateY(130%);
+    }
+    .Section-Info-Container {
+      margin-right: 0;
+    }
     .Section-Sub-Title {
       font-size: 30px;
       text-align: center;
@@ -977,10 +984,11 @@ footer {
     }
     .Landing-Para {
       font-size: 16px;
+      text-align: center;
     }
     .Company-List {
-      padding-left: 24px;
-      padding-right: 24px;
+      padding: 0 24px;
+      padding-top: 120px;
     }
 
     .Section-Info-Container {
@@ -994,14 +1002,28 @@ footer {
     .Feature {
       width: 100%;
     }
+    .Section-Sub-Title {
+      font-size: 30px;
+    }
     .Feature-Para {
-      font-size: 18px;
+      font-size: 16px;
     }
     .Icon-Para {
       font-size: 16px;
     }
     .Icon-Title {
       font-size: 18px;
+    }
+  }
+
+  /*QUALITY*/
+
+  #Quality-Work,
+  #Steps,
+  #Pricing,
+  #Testimonials {
+    .Section-Sub-Title {
+      font-size: 30px;
     }
   }
 
@@ -1029,8 +1051,76 @@ footer {
   }
 }
 
-@media(max-width:475px) {
-  .Email-Input {
-    width: 100%;
+@media (max-width: 475px) {
+  /*LANDING-PAGE*/
+  #Landing-Page {
+    .Section-Sub-Title {
+      font-size: 28px;
+    }
+    .Email-Input {
+      width: 100%;
+    }
+    .Landing-Para {
+      font-size: 14px;
+    }
+  }
+
+  /*FEATURES*/
+
+  #Features {
+    .Section-Sub-Title {
+      font-size: 28px;
+    }
+    .Feature-Para,
+    .Icon-Para {
+      font-size: 14px;
+    }
+  }
+
+  /*QUALITY*/
+  #Quality-Work {
+    .Section-Sub-Title {
+      font-size: 28px;
+    }
+    .Quality-Para {
+      font-size: 14px;
+    }
+  }
+
+  /*STEPS*/
+  #Steps {
+    .Section-Sub-Title {
+      font-size: 28px;
+    }
+    .Text-Semi-Large {
+      font-size: 28px;
+    }
+    .Text-Medium {
+      font-size: 18px;
+    }
+    .Step-Para {
+      font-size: 14px;
+    }
+  }
+
+  /*PRICING*/
+  #Pricing {
+    .Section-Sub-Title {
+      font-size: 28px;
+    }
+    .Feature-Para,
+    .Plan-Para {
+      font-size: 14px;
+    }
+  }
+
+  /*TESTIMONIALS*/
+  #Testimonials {
+    .Section-Sub-Title {
+      font-size: 28px;
+    }
+    .Testimonials-Para {
+      font-size: 14px;
+    }
   }
 }
