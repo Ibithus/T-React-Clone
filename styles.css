@@ -127,6 +127,31 @@ button:hover, .Purple-Button:hover, .Contact-Button:hover {
 .Nav-Link {
   margin: 0 24px;
   font-size: 14px;
+  position: relative;
+  transition: all 300ms ease;
+}
+
+.Nav-Link:not(:last-child):after {
+  content: "";
+  width: 10%;
+  height: 2px;
+  bottom: -2px;
+  right: 0;
+  opacity: 0;
+  position: absolute;
+  background-color: #6415ff;
+  transition: all 300ms ease;
+}
+
+.Nav-Link:hover:not(:last-child):after {
+  opacity: 1;
+  width: 100%;
+  left: 0;
+}
+
+.Nav-Link:hover:not(:last-child) {
+  color: #6415ff;
+
 }
 
 /*Creating Hamburger Menu*/
@@ -631,6 +656,26 @@ footer {
 .Footer-Link {
   font-size: 14px;
   margin: 12px 0;
+  position: relative;
+  cursor: pointer;
+}
+
+.Footer-Link::after {
+  content: "";
+  width: 10%;
+  height: 2px;
+  bottom: -2px;
+  right: 0;
+  opacity: 0;
+  position: absolute;
+  background-color: #FFF;
+  transition: all 300ms ease;
+}
+
+.Footer-Link:hover::after {
+  opacity: 1;
+  width: 100%;
+  left: 0;
 }
 
 .Grey-Line {
