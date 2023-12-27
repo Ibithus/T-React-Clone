@@ -10,15 +10,6 @@
   text-decoration: none;
   font-family: "Inter", sans-serif;
 }
-
-button, .Purple-Button {
-  transition: all 300ms ease;
-}
-
-button:hover, .Purple-Button:hover, .Contact-Button:hover {
-  filter: brightness(1.2);
-}
-
 .Row {
   width: 100%;
   max-width: 1200px;
@@ -84,6 +75,28 @@ button:hover, .Purple-Button:hover, .Contact-Button:hover {
   padding: 12px 32px;
   background-color: #6415ff;
   border-radius: 24px;
+  position: relative;
+}
+
+/*
+
+.Purple-Button:hover, .Landing-Button:hover, .Contact-Button:nth-child(1):hover {
+}
+
+*/
+.Purple-Button::after {
+  opacity: 0;
+  top: 0; left: 0;
+  right: 0; bottom: 0;
+  color: #FFF;
+  background-color: rgb(36, 36, 36,0.4);
+  border-radius: 24px;
+  content: "";
+  position: absolute;
+}
+
+.Purple-Button:hover::after {
+  opacity: 0.5;
 }
 
 /*NAVIGATION BAR*/
@@ -393,6 +406,12 @@ button:hover, .Purple-Button:hover, .Contact-Button:hover {
   max-width: none;
 }
 
+#Quality-Work {
+  .Purple-Button {
+    font-size: 16px;
+  }
+}
+
 /*STEPS*/
 
 #Steps,
@@ -624,7 +643,7 @@ button:hover, .Purple-Button:hover, .Contact-Button:hover {
 
 .Contact-Button:nth-child(2):hover {
   background-color: white;
-  color: #f56565;
+  color: #6415ff;
 }
 
 /*FOOTER*/
