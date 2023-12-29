@@ -78,27 +78,6 @@
   position: relative;
 }
 
-/*
-
-.Purple-Button:hover, .Landing-Button:hover, .Contact-Button:nth-child(1):hover {
-}
-
-*/
-.Purple-Button::after {
-  opacity: 0;
-  top: 0; left: 0;
-  right: 0; bottom: 0;
-  color: #FFF;
-  background-color: rgb(36, 36, 36,0.4);
-  border-radius: 24px;
-  content: "";
-  position: absolute;
-}
-
-.Purple-Button:hover::after {
-  opacity: 0.5;
-}
-
 /*NAVIGATION BAR*/
 
 .Nav-Container {
@@ -1067,6 +1046,7 @@ footer {
     }
     .Section-Info-Container {
       margin-right: 0;
+      padding-bottom: 24px;
     }
     .Section-Sub-Title {
       font-size: 30px;
